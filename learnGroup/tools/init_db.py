@@ -6,7 +6,7 @@ from apps.question.models import *
 
 from MxForm.settings import database
 database = MySQLDatabase(
-    'mxforum', host="118.25.95.163", port=3306, user="root", password="xiaoxiao"
+    'mysql', host="118.25.95.163", port=3306, user="root", password="xiaoxiao"
 )
 
 

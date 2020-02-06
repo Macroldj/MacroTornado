@@ -18,6 +18,7 @@ class Question(BaseModel):
     def extend(cls):
         return cls.select(cls, User.id, User.nick_name).join(User)
 
+
 class Answer(BaseModel):
     # 回答和回复
     user = ForeignKeyField(User, verbose_name="用户", related_name="author")
