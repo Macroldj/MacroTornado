@@ -8,7 +8,7 @@ from MxForm.settings import settings, database
 
 if __name__ == "__main__":
 
-    # 集成json到wtforms
+    # 集成json到 wtforms
     import wtforms_json
     wtforms_json.init()
 
