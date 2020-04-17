@@ -23,6 +23,3 @@ urlpattern += user_urls.urlpattern
 urlpattern += community_urls.urlpattern
 urlpattern += ueditor_urls.urlpattern
 urlpattern += question_urls.urlpattern
-
-#集成ueditor注意事项
-#前端的域名和后端的域名保持一致

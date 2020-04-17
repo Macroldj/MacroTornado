@@ -43,7 +43,7 @@ GENDERS = (
 
 class User(BaseModel):
     mobile = CharField(max_length=11, verbose_name="手机号码", index=True, unique=True)
-    password = PasswordField(verbose_name="密码") #1. 密文，2.不可反解
+    password = PasswordField(verbose_name="密码")
     nick_name = CharField(max_length=20, null=True, verbose_name="昵称")
     head_url = CharField(max_length=200, null=True, verbose_name="头像")
     address = CharField(max_length=200, null=True, verbose_name="地址")

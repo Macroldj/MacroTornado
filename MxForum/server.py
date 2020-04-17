@@ -1,5 +1,4 @@
 from tornado import web
-import tornado
 from peewee_async import Manager
 
 from tornado.ioloop import IOLoop
@@ -8,7 +7,6 @@ from MxForm.settings import settings, database
 
 if __name__ == "__main__":
 
-    # 集成json到 wtforms
     import wtforms_json
     wtforms_json.init()
 
@@ -21,6 +19,3 @@ if __name__ == "__main__":
     app.objects = objects
     io_loop = IOLoop.current()
     io_loop.start()
-
-# self.redirect方法和RedirectHandler方法区别是什么
-# self.redirect
