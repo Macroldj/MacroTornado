@@ -6,7 +6,6 @@ from MxForm.urls import urlpattern
 from MxForm.settings import settings, database
 
 if __name__ == "__main__":
-
     import wtforms_json
     wtforms_json.init()
 

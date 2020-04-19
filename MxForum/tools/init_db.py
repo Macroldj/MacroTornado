@@ -5,9 +5,7 @@ from apps.community.models import CommunityGroup, CommunityGroupMember, Post, Po
 from apps.question.models import *
 
 from MxForm.settings import database
-# database = MySQLDatabase(
-#     'xiaoxiao', host="118.25.95.136", port=3306, user="root", password="xiaoxiao"
-# )
+
 
 def init():
     #生成表

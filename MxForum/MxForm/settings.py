@@ -24,5 +24,5 @@ settings = {
 }
 
 database = peewee_async.MySQLDatabase(
-    'xiaoxiao', host="118.25.95.136", port=3306, user="root", password="xiaoxiao"
+    'macrotornado', host="192.168.47.140", port=3306, user="root", password="123456"
 )
