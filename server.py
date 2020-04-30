@@ -2,8 +2,8 @@ from tornado import web
 from peewee_async import Manager
 
 from tornado.ioloop import IOLoop
-from MxForm.urls import urlpattern
-from MxForm.settings import settings, database
+from MacroTornado.urls import urlpattern
+from MacroTornado.settings import settings, database
 
 if __name__ == "__main__":
     import wtforms_json

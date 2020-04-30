@@ -5,7 +5,7 @@ import jwt
 
 current_time = datetime.utcnow()
 
-from MxForm.settings import settings
+from MacroTornado.settings import settings
 
 web_site_url = "http://127.0.0.1:8888"
 data = jwt.encode({

@@ -5,7 +5,7 @@ from apps.users import urls as user_urls
 from apps.community import urls as community_urls
 from apps.ueditor import urls as ueditor_urls
 from apps.question import urls as question_urls
-from MxForm.settings import settings
+from MacroTornado.settings import settings
 
 
 class MyFileHandler(StaticFileHandler):

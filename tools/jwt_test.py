@@ -1,7 +1,7 @@
 from datetime import datetime
 
 import jwt
-from MxForm.settings import settings
+from MacroTornado.settings import settings
 current_time = datetime.utcnow()
 
 data = jwt.encode({

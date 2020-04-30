@@ -5,7 +5,7 @@ import json
 import aiofiles
 from playhouse.shortcuts import model_to_dict
 
-from MxForm.handler import RedisHandler
+from MacroTornado.handler import RedisHandler
 from apps.utils.mxform_decorators import authenticated_async
 from apps.question.models import *
 from apps.question.forms import *

@@ -2,7 +2,7 @@ from datetime import datetime
 
 from peewee import *
 
-from MxForm.models import BaseModel
+from MacroTornado.models import BaseModel
 from apps.users.models import User
 
 

@@ -1,6 +1,6 @@
 from peewee import *
 from bcrypt import hashpw, gensalt
-from MxForm.models import BaseModel
+from MacroTornado.models import BaseModel
 
 
 class PasswordHash(bytes):

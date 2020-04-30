@@ -6,7 +6,7 @@ from tornado.web import authenticated
 import aiofiles
 from playhouse.shortcuts import model_to_dict
 
-from MxForm.handler import RedisHandler
+from MacroTornado.handler import RedisHandler
 from apps.utils.mxform_decorators import authenticated_async
 from apps.community.forms import *
 from apps.community.models import *

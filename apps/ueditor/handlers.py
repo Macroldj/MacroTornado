@@ -12,7 +12,6 @@ from tornado.concurrent import futures
 from tornado.web import StaticFileHandler
 from tornado.web import RequestHandler
 
-from PIL import Image
 import json
 import os
 import re
@@ -166,7 +165,7 @@ class UeditorEnv():
 
 u4Ts = UeditorEnv(with_list_cache=True)
 
-from MxForm.handler import BaseHandler
+from MacroTornado.handler import BaseHandler
 class UploadHandler(BaseHandler):
     executor = futures.ThreadPoolExecutor(100)
 

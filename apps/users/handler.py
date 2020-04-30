@@ -8,7 +8,7 @@ import jwt
 
 from apps.users.forms import SmsCodeForm, RegisterForm, LoginForm
 from apps.utils.AsyncYunPian import AsyncYunPian
-from MxForm.handler import RedisHandler
+from MacroTornado.handler import RedisHandler
 from apps.users.models import User
 
 class LoginHandler(RedisHandler):

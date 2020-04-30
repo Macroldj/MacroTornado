@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from MxForm.settings import database
+from MacroTornado.settings import database
 from peewee import *
 
 
