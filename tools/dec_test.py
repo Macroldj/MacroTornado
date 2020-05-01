@@ -1,7 +1,6 @@
-#装饰器是什么样的
-#装饰器加载过程
 import functools
 import time
+
 
 def time_dec(func):
     print("dec started")
@@ -13,6 +12,7 @@ def time_dec(func):
         print("last_time:{}".format(end_time - start_time))
     return wrapper
 
+
 @time_dec
 def add(a, b):
     time.sleep(3)
@@ -20,6 +20,4 @@ def add(a, b):
 
 
 if __name__ == "__main__":
-    #1. 为什么我们调用add的时候报错是wrapper
-    #2. 变量如何传递到wrapper中
     print(add(1,2))

@@ -8,7 +8,6 @@ from MacroTornado.settings import database
 
 
 def init():
-    #生成表
     database.create_tables([User])
     database.create_tables([CommunityGroup,CommunityGroupMember])
     database.create_tables([Post, PostComment, CommentLike])

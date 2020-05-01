@@ -4,6 +4,7 @@ from urllib.parse import urlencode
 from tornado import httpclient
 from tornado.httpclient import HTTPRequest
 
+
 class AsyncYunPian:
     def __init__(self, api_key):
         self.api_key = api_key
@@ -20,13 +21,12 @@ class AsyncYunPian:
         res = await http_client.fetch(post_request)
         return json.loads(res.body.decode("utf8"))
 
+
 if __name__ == "__main__":
     import tornado
     io_loop = tornado.ioloop.IOLoop.current()
-
     yun_pian = AsyncYunPian("d6c4ddbf50ab36611d2f52041a0b949e")
 
-    #run_sync方法可以在运行完某个协程之后停止事件循环
     from functools import partial
     new_func = partial(yun_pian.send_single_sms, "1234", "18785625498")
     io_loop.run_sync(new_func)

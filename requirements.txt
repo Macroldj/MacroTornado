@@ -11,3 +11,4 @@ wtforms_tornado
 redis
 bcrypt
 wtforms_json
+requests
