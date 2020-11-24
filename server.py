@@ -13,7 +13,6 @@ if __name__ == "__main__":
     app.listen(8888)
 
     objects = Manager(database)
-    # No need for sync anymore!
     database.set_allow_sync(False)
     app.objects = objects
     io_loop = IOLoop.current()
