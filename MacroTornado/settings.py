@@ -3,8 +3,9 @@ import os
 import peewee_async
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+static_path = os.path.join(BASE_DIR, 'static')
 settings = {
-    "static_path": "C:/projects/tornado_overview/chapter03/static",
+    "static_path": static_path,
     "static_url_prefix": "/static/",
     "template_path": "templates",
     "secret_key":"ZGGA#Mp4yL4w5CDu",
@@ -24,5 +25,5 @@ settings = {
 }
 
 database = peewee_async.MySQLDatabase(
-    'macrotornado', host="118.25.95.136", port=3306, user="root", password="123456"
+    'macrotornado', host="118.25.95.136", port=3306, user="root", password="root"
 )
