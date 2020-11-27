@@ -1,3 +1,5 @@
+from abc import ABC
+
 from tornado.web import url
 from tornado.web import StaticFileHandler
 
@@ -8,18 +10,18 @@ from apps.question import urls as question_urls
 from MacroTornado.settings import settings
 
 
-class MyFileHandler(StaticFileHandler):
+class MyFileHandler(StaticFileHandler, ABC):
     def write_error(self, status_code, **kwargs):
         if status_code == 404:
             self.redirect('http://example.com') # Fetching a default resource
 
 
-urlpattern = [
-    (url("/media/(.*)", StaticFileHandler, {'path':settings["MEDIA_ROOT"]}))
+urlPattern = [
+    (url("/media/(.*)", StaticFileHandler, {'path': settings["MEDIA_ROOT"]}))
 ]
 
 
-urlpattern += user_urls.urlpattern
-urlpattern += community_urls.urlpattern
-urlpattern += ueditor_urls.urlpattern
-urlpattern += question_urls.urlpattern
+urlPattern += user_urls.urlpattern
+urlPattern += community_urls.urlpattern
+urlPattern += ueditor_urls.urlpattern
+urlPattern += question_urls.urlpattern
