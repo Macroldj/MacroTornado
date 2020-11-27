@@ -3,13 +3,13 @@ from functools import partial
 from random import choice
 from datetime import datetime
 
-from tornado.web import RequestHandler
 import jwt
 
 from apps.users.forms import SmsCodeForm, RegisterForm, LoginForm
 from apps.utils.AsyncYunPian import AsyncYunPian
 from MacroTornado.handler import RedisHandler
 from apps.users.models import User
+
 
 class LoginHandler(RedisHandler):
     async def post(self, *args, **kwargs):
@@ -53,6 +53,7 @@ class LoginHandler(RedisHandler):
                 re_data["mobile"] = "用户不存在"
 
             await self.finish(re_data)
+
 
 class RegisterHandler(RedisHandler):
     async def post(self, *args, **kwargs):

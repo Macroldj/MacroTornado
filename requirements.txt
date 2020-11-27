@@ -12,3 +12,4 @@ redis
 bcrypt
 wtforms_json
 requests
+tornado-redis
