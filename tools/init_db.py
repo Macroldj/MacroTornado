@@ -1,6 +1,3 @@
-from peewee import MySQLDatabase
-
-from apps.users.models import User
 from apps.community.models import CommunityGroup, CommunityGroupMember, Post, PostComment, CommentLike
 from apps.question.models import *
 
